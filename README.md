@@ -1,2 +1,2 @@
 #Sieve of Eratosthenes
-#Find prime numbers in a certain range
+Find prime numbers in a certain range
