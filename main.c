@@ -1,12 +1,12 @@
 /*
-Author: Botan Celik
-Class: 5AHEL
-Program: SiebDesErasthones
-Date: 02.10.2020
+    Author: Botan Celik
+    Class: 5AHEL
+    Program: SiebDesErasthones
+    Date: 02.10.2020
+    Github rep.: https://github.com/TheBloodyAmateur/Sieb-des-Erasthones.git
 */
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 //global variables
 int numbers[500];
@@ -14,7 +14,6 @@ int numbers[500];
 //functions
 void fill();
 void printNumbers();
-bool findPrimeNumbers(int n);
 
 int main()
 {
@@ -64,7 +63,7 @@ void sortPrimeNumber()
             for(count = 0; count <= 500; count++)
             {
                 //If the number is a multiple of a certain number it's set to 0.
-                if(numbers[count] == n * m)
+                if(numbers[count] == n * m || numbers[count] == 1)
                 {
                     numbers[count] = 0;
                 }
